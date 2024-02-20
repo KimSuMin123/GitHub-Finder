@@ -71,6 +71,7 @@ document.getElementById('searchbtn').addEventListener('click', () => {
     github.userInfo(userText)
         .then(data => {
             ui.showProfile(data.profile);
-            ui.showRepos(data.repos);    
+            ui.showRepos(data.repos);  
+            searchButton.style.display = 'none'; 
         });
 });
